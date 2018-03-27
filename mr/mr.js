@@ -12,7 +12,7 @@
  * https://github.com/06wj/MaxRectsBinPack
  */
 var mr;
-(function () {
+(function (mr) {
     /**
      * Rect
      * @param {Number} x      矩形坐标x
@@ -489,4 +489,4 @@ var mr;
     mr.MaxRectsBinPack = MaxRectsBinPack;
     egret.registerClass(MaxRectsBinPack,'mr.MaxRectsBinPack');
     window.MaxRectsBinPack = MaxRectsBinPack;
-})();
+})(mr || (mr = {}));
